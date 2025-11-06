@@ -15,3 +15,9 @@ jobs:
             # 1- Recuperer le code source
             - name: Recuperer le code source
               uses: actions/checkout@v5
+
+            # 2 Executer les tests
+
+            - name: Run tests
+
+              uses: cd app && composer && php artisan test
