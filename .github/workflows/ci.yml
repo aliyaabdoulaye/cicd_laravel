@@ -21,3 +21,4 @@ jobs:
             - name: Run tests
 
               run: cd app && composer install && cp .env.example .env && php artisan key:gen && php artisan test
+            
