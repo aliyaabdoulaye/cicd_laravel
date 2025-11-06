@@ -20,4 +20,4 @@ jobs:
 
             - name: Run tests
 
-              uses: cd app && composer && php artisan test
+              run: cd app && composer && php artisan key:gen && php artisan test
